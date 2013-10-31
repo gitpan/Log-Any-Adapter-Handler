@@ -1,6 +1,6 @@
 package Log::Any::Adapter::Handler;
-# ABSTRACT: Log::Any::Adapter::Handler
-our $VERSION = '0.001';
+# ABSTRACT: Log::Any::Adapter for Log::Handler
+our $VERSION = '0.002';
 
 use strict;
 use warnings;
@@ -56,9 +56,9 @@ Log::Any::Adapter::Handler
 
 =head1 DESCRIPTION
 
-Log::Any adapter for Log::Handler. Log::Handler should be initialized before
-calling C<set>, otherwise your log messages end up nowhere. The Log::Handler
-object is passed via the logger parameter.
+This is a L<Log::Any> adapter for L<Log::Handler>. Log::Handler should be
+initialized before calling C<set>, otherwise your log messages end up nowhere.
+The Log::Handler object is passed via the logger parameter.
 
 =head1 SEE ALSO
 

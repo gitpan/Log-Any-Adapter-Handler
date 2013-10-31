@@ -1,5 +1,5 @@
 {
-   "abstract" : "Log::Any::Adapter::Handler",
+   "abstract" : "Log::Any::Adapter for Log::Handler",
    "author" : [
       "Gelu Lupas <gelu@devnull.ro>"
    ],
@@ -48,7 +48,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Log::Any" : "0",
+            "Log::Any::Adapter" : "0",
             "Log::Handler" : "0",
             "perl" : "5.008001",
             "strict" : "0",
@@ -59,7 +59,7 @@
    "provides" : {
       "Log::Any::Adapter::Handler" : {
          "file" : "lib/Log/Any/Adapter/Handler.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
@@ -73,6 +73,6 @@
          "web" : "https://github.com/ggl/Log-Any-Adapter-Handler"
       }
    },
-   "version" : "0.001",
+   "version" : "0.002",
    "x_authority" : "cpan:GVL"
 }
