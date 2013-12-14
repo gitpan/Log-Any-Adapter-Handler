@@ -1,5 +1,8 @@
 Revision history for Perl module Log::Any::Adapter::Handler
 
+0.003 2013-12-14T09:24:42Z
+  * Revised the documentation 
+
 0.002 2013-10-31T21:13:26Z
   * Fixed requires
 

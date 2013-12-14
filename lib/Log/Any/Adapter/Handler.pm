@@ -1,6 +1,6 @@
 package Log::Any::Adapter::Handler;
 # ABSTRACT: Log::Any::Adapter for Log::Handler
-our $VERSION = '0.002';
+our $VERSION = '0.003';
 
 use strict;
 use warnings;
@@ -46,7 +46,7 @@ Log::Any::Adapter::Handler
 =head1 SYNOPSIS
 
   use Log::Handler;
-  use Log::Any::Adapter::Handler;
+  use Log::Any::Adapter;
 
   my $lh = Log::Handler->new(screen => {log_to => 'STDOUT'});
   Log::Any::Adapter->set('Handler', logger => $lh);
@@ -57,8 +57,11 @@ Log::Any::Adapter::Handler
 =head1 DESCRIPTION
 
 This is a L<Log::Any> adapter for L<Log::Handler>. Log::Handler should be
-initialized before calling C<set>, otherwise your log messages end up nowhere.
-The Log::Handler object is passed via the logger parameter.
+initialized before calling C<set>, otherwise your log messages will end up
+nowhere. The Log::Handler object is passed via the C<logger> parameter.
+
+Log levels are translated 1:1. Log::Handler's special logging methods are not
+implemented.
 
 =head1 SEE ALSO
 

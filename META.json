@@ -1,10 +1,10 @@
 {
    "abstract" : "Log::Any::Adapter for Log::Handler",
    "author" : [
-      "Gelu Lupas <gelu@devnull.ro>"
+      "Gelu Lupaş <gvl@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v0.8.1",
+   "generated_by" : "Minilla/v0.11.0",
    "license" : [
       "mit"
    ],
@@ -59,7 +59,7 @@
    "provides" : {
       "Log::Any::Adapter::Handler" : {
          "file" : "lib/Log/Any/Adapter/Handler.pm",
-         "version" : "0.002"
+         "version" : "0.003"
       }
    },
    "release_status" : "stable",
@@ -73,6 +73,6 @@
          "web" : "https://github.com/ggl/Log-Any-Adapter-Handler"
       }
    },
-   "version" : "0.002",
+   "version" : "0.003",
    "x_authority" : "cpan:GVL"
 }

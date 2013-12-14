@@ -5,7 +5,7 @@ Log::Any::Adapter::Handler
 # SYNOPSIS
 
     use Log::Handler;
-    use Log::Any::Adapter::Handler;
+    use Log::Any::Adapter;
 
     my $lh = Log::Handler->new(screen => {log_to => 'STDOUT'});
     Log::Any::Adapter->set('Handler', logger => $lh);
@@ -15,10 +15,13 @@ Log::Any::Adapter::Handler
 
 # DESCRIPTION
 
-This is a [Log::Any](http://search.cpan.org/perldoc?Log::Any) adapter for [Log::Handler](http://search.cpan.org/perldoc?Log::Handler). Log::Handler should be
-initialized before calling `set`, otherwise your log messages end up nowhere.
-The Log::Handler object is passed via the logger parameter.
+This is a [Log::Any](https://metacpan.org/pod/Log::Any) adapter for [Log::Handler](https://metacpan.org/pod/Log::Handler). Log::Handler should be
+initialized before calling `set`, otherwise your log messages will end up
+nowhere. The Log::Handler object is passed via the `logger` parameter.
+
+Log levels are translated 1:1. Log::Handler's special logging methods are not
+implemented.
 
 # SEE ALSO
 
-[Log::Any](http://search.cpan.org/perldoc?Log::Any), [Log::Any::Adapter](http://search.cpan.org/perldoc?Log::Any::Adapter), [Log::Handler](http://search.cpan.org/perldoc?Log::Handler)
+[Log::Any](https://metacpan.org/pod/Log::Any), [Log::Any::Adapter](https://metacpan.org/pod/Log::Any::Adapter), [Log::Handler](https://metacpan.org/pod/Log::Handler)
