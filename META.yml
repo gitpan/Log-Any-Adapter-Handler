@@ -28,10 +28,11 @@ no_index:
 provides:
   Log::Any::Adapter::Handler:
     file: lib/Log/Any/Adapter/Handler.pm
-    version: 0.003
+    version: 0.004
 requires:
   Log::Any::Adapter: 0
   Log::Handler: 0
+  parent: 0
   perl: 5.008001
   strict: 0
   warnings: 0
@@ -39,5 +40,5 @@ resources:
   bugtracker: https://github.com/ggl/Log-Any-Adapter-Handler/issues
   homepage: https://github.com/ggl/Log-Any-Adapter-Handler
   repository: https://github.com/ggl/Log-Any-Adapter-Handler.git
-version: 0.003
+version: 0.004
 x_authority: cpan:GVL

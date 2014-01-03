@@ -1,12 +1,12 @@
 package Log::Any::Adapter::Handler;
 # ABSTRACT: Log::Any::Adapter for Log::Handler
-our $VERSION = '0.003';
+our $VERSION = '0.004';
 
 use strict;
 use warnings;
 
 use Log::Any::Adapter::Util qw(make_method);
-use base qw(Log::Any::Adapter::Base);
+use parent qw(Log::Any::Adapter::Base);
 use Log::Handler;
 
 sub init {

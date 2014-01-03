@@ -50,6 +50,7 @@
          "requires" : {
             "Log::Any::Adapter" : "0",
             "Log::Handler" : "0",
+            "parent" : "0",
             "perl" : "5.008001",
             "strict" : "0",
             "warnings" : "0"
@@ -59,7 +60,7 @@
    "provides" : {
       "Log::Any::Adapter::Handler" : {
          "file" : "lib/Log/Any/Adapter/Handler.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
@@ -73,6 +74,6 @@
          "web" : "https://github.com/ggl/Log-Any-Adapter-Handler"
       }
    },
-   "version" : "0.003",
+   "version" : "0.004",
    "x_authority" : "cpan:GVL"
 }

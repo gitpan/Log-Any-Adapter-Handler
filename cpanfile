@@ -1,6 +1,7 @@
 requires 'perl', '5.008001';
 requires 'strict';
 requires 'warnings';
+requires 'parent';
 requires 'Log::Any::Adapter';
 requires 'Log::Handler';
 
