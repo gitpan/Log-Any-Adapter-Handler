@@ -25,3 +25,19 @@ implemented.
 # SEE ALSO
 
 [Log::Any](https://metacpan.org/pod/Log::Any), [Log::Any::Adapter](https://metacpan.org/pod/Log::Any::Adapter), [Log::Handler](https://metacpan.org/pod/Log::Handler)
+
+# AUTHOR
+
+Gelu Lupaş <gvl@cpan.org>
+
+# COPYRIGHT AND LICENSE
+ 
+
+Copyright (c) 2013-2014 the Log::Any::Adapter::Handler ["AUTHOR"](#AUTHOR) as listed
+above.
+ 
+
+This is free software, licensed under:
+ 
+
+    The MIT License (MIT)

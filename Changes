@@ -1,5 +1,8 @@
 Revision history for Perl module Log::Any::Adapter::Handler
 
+0.005 2014-01-21T22:17:44Z
+  * Added author and license to the pod
+
 0.004 2014-01-03T19:10:15Z
   * Subclassing with parent instead of base
   * Updated requires 

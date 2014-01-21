@@ -1,6 +1,6 @@
 package Log::Any::Adapter::Handler;
 # ABSTRACT: Log::Any::Adapter for Log::Handler
-our $VERSION = '0.004';
+our $VERSION = '0.005';
 
 use strict;
 use warnings;
@@ -66,5 +66,18 @@ implemented.
 =head1 SEE ALSO
 
 L<Log::Any>, L<Log::Any::Adapter>, L<Log::Handler>
+
+=head1 AUTHOR
+
+Gelu Lupaş <gvl@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+ 
+Copyright (c) 2013-2014 the Log::Any::Adapter::Handler L</AUTHOR> as listed
+above.
+ 
+This is free software, licensed under:
+ 
+  The MIT License (MIT)
 
 =cut

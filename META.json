@@ -60,7 +60,7 @@
    "provides" : {
       "Log::Any::Adapter::Handler" : {
          "file" : "lib/Log/Any/Adapter/Handler.pm",
-         "version" : "0.004"
+         "version" : "0.005"
       }
    },
    "release_status" : "stable",
@@ -74,6 +74,6 @@
          "web" : "https://github.com/ggl/Log-Any-Adapter-Handler"
       }
    },
-   "version" : "0.004",
+   "version" : "0.005",
    "x_authority" : "cpan:GVL"
 }
