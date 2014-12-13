@@ -31,13 +31,10 @@ implemented.
 Gelu Lupaş <gvl@cpan.org>
 
 # COPYRIGHT AND LICENSE
- 
 
-Copyright (c) 2013-2014 the Log::Any::Adapter::Handler ["AUTHOR"](#AUTHOR) as listed
+Copyright (c) 2013-2014 the Log::Any::Adapter::Handler ["AUTHOR"](#author) as listed
 above.
- 
 
 This is free software, licensed under:
- 
 
     The MIT License (MIT)

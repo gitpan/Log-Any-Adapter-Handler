@@ -3,17 +3,15 @@ abstract: 'Log::Any::Adapter for Log::Handler'
 author:
   - 'Gelu Lupaş <gvl@cpan.org>'
 build_requires:
-  Test::More: 0.98
+  Test::More: '0.98'
 configure_requires:
-  CPAN::Meta: 0
-  CPAN::Meta::Prereqs: 0
-  Module::Build: 0.38
+  Module::Build: '0.38'
 dynamic_config: 0
-generated_by: 'Minilla/v0.11.0, CPAN::Meta::Converter version 2.133380'
+generated_by: 'Minilla/v2.3.0, CPAN::Meta::Converter version 2.141520'
 license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: Log-Any-Adapter-Handler
 no_index:
   directory:
@@ -28,17 +26,17 @@ no_index:
 provides:
   Log::Any::Adapter::Handler:
     file: lib/Log/Any/Adapter/Handler.pm
-    version: 0.005
+    version: '0.006'
 requires:
-  Log::Any::Adapter: 0
-  Log::Handler: 0
-  parent: 0
-  perl: 5.008001
-  strict: 0
-  warnings: 0
+  Log::Any::Adapter: '<= 0.11'
+  Log::Handler: '0'
+  parent: '0'
+  perl: '5.008001'
+  strict: '0'
+  warnings: '0'
 resources:
   bugtracker: https://github.com/ggl/Log-Any-Adapter-Handler/issues
   homepage: https://github.com/ggl/Log-Any-Adapter-Handler
-  repository: https://github.com/ggl/Log-Any-Adapter-Handler.git
-version: 0.005
+  repository: git://github.com/ggl/Log-Any-Adapter-Handler.git
+version: '0.006'
 x_authority: cpan:GVL

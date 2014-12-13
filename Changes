@@ -1,5 +1,9 @@
 Revision history for Perl module Log::Any::Adapter::Handler
 
+0.006 2014-12-13T09:35:34Z
+  * Impose Log::Any::Adapter <= 0.11 due to breaking changes introduced by
+  Log::Any 0.90
+
 0.005 2014-01-21T22:17:44Z
   * Added author and license to the pod
 

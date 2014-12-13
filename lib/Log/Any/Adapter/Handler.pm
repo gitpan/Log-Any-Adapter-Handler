@@ -1,6 +1,6 @@
 package Log::Any::Adapter::Handler;
 # ABSTRACT: Log::Any::Adapter for Log::Handler
-our $VERSION = '0.005';
+our $VERSION = '0.006';
 
 use strict;
 use warnings;
