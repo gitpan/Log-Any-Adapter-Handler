@@ -1,11 +1,11 @@
 package Log::Any::Adapter::Handler;
 # ABSTRACT: Log::Any::Adapter for Log::Handler
-our $VERSION = '0.006';
+our $VERSION = '0.007';
 
 use strict;
 use warnings;
 
-use Log::Any::Adapter::Util qw(make_method);
+use Log::Any::Adapter::Util ();
 use parent qw(Log::Any::Adapter::Base);
 use Log::Handler;
 
@@ -15,22 +15,24 @@ sub init {
 }
 
 # logging methods
-foreach my $method (Log::Any->logging_methods) {
+foreach my $method (Log::Any::Adapter::Util::logging_methods) {
+	no strict 'refs';
 	my $handler_method = $method;
-	make_method($method, sub {
+	*$method = sub {
 		my $self = shift;
 		return $self->{logger}->$handler_method(@_);
-	});
+	};
 }
 
 # detection methods
-foreach my $method (Log::Any->detection_methods) {
+foreach my $method (Log::Any::Adapter::Util::detection_methods()) {
 	my $self = shift;
 	my $handler_method = $method;
-	make_method($method, sub {
+	no strict 'refs';
+	*$method = sub {
 		my $self = shift;
 		return $self->{logger}->$handler_method(@_);
-	});
+	};
 }
 
 1;
