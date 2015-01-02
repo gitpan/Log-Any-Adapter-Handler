@@ -1,13 +1,19 @@
 Revision history for Perl module Log::Any::Adapter::Handler
 
+0.009 2015-01-02T08:57:23Z
+  * Requre Log::Any 1.03. Fix tests to check for output when using multiple
+    arguments.
+
 0.008 2014-12-29T12:09:33Z
   * Fix ChangeLog. No functional changes.
 
 0.007 2014-12-29T08:13:44Z
-  * Impose Log::Any >= 1.0, fixed tests. One should not pass list arguments to logging methods due to changes in Log::Any (GH#1).
+  * Impose Log::Any >= 1.0, fixed tests. One should not pass multiple arguments
+    to logging methods due to changes in Log::Any (GH#1).
 
 0.006 2014-12-13T09:35:34Z
-  * Impose Log::Any::Adapter <= 0.11 due to breaking changes introduced by Log::Any 0.90
+  * Require Log::Any::Adapter <= 0.11 due to breaking changes introduced by 
+    Log::Any 0.90
 
 0.005 2014-01-21T22:17:44Z
   * Added author and license to the pod

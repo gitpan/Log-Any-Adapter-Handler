@@ -47,7 +47,7 @@
       },
       "runtime" : {
          "requires" : {
-            "Log::Any" : "1.0",
+            "Log::Any" : "1.03",
             "Log::Handler" : "0",
             "parent" : "0",
             "perl" : "5.008001",
@@ -59,7 +59,7 @@
    "provides" : {
       "Log::Any::Adapter::Handler" : {
          "file" : "lib/Log/Any/Adapter/Handler.pm",
-         "version" : "0.008"
+         "version" : "0.009"
       }
    },
    "release_status" : "stable",
@@ -73,6 +73,6 @@
          "web" : "https://github.com/ggl/Log-Any-Adapter-Handler"
       }
    },
-   "version" : "0.008",
+   "version" : "0.009",
    "x_authority" : "cpan:GVL"
 }

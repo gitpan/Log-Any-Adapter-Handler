@@ -28,9 +28,7 @@ can_ok($log, @methodsf);
 shift @methods;
 shift @methodsf;
 $log->$_('aaargh!', 'aaarg!') for @methods;
-#ok((shift @lines) =~ /.+$_.+aaargh\!\saaarg\!/i, $_) for @methods;
-# the first argument passes through, the rest get truncated
-ok((shift @lines) =~ /.+$_.+aaargh\!/i, $_) for @methods;
+ok((shift @lines) =~ /.+$_.+aaargh\!\saaarg\!/i, $_) for @methods;
 $log->$_('aaargh! %s', 'aaarg!') for @methodsf;
 ok((shift @lines) =~ /.+$_.+aaargh\!\saaarg\!/i, $_.'f') for @methods;
 
